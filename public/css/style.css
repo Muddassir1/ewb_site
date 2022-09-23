@@ -396,7 +396,7 @@ li.list-item {
     color: #e3e5e6;
 }
 
-.footer-menu > ul > li a {
+.footer-menu>ul>li a {
     align-items: center;
     color: #e3e5e6;
     cursor: pointer;
@@ -405,7 +405,7 @@ li.list-item {
     text-decoration: none;
 }
 
-.footer-menu > ul {
+.footer-menu>ul {
     list-style: none;
     padding: 0px;
 }
@@ -414,4 +414,137 @@ li.list-item {
     text-transform: uppercase;
     font-size: 17px;
     margin-bottom: 10px;
+}
+
+
+/* Tutors Page */
+
+.page-tutors .page-header:after {
+    background-image: url('/images/tutors-header-background.svg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 1408px 100%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.page-tutors .page-title {
+    color: #fff;
+    font-family: Poppins, Montserrat, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+span.title-em {
+    color: #52d2dd;
+    font-weight: 700;
+}
+
+.page-tutors .page-header-content {
+    color: white;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1216px;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.page-tutors .page-header-content:after {
+    background-image: url('/images/tutors-header-2.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    flex: 1 1 30%;
+    height: 260px;
+    margin-bottom: -148px;
+    margin-top: -64px;
+    width: 285px;
+}
+
+.page-tutors .page-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 70%;
+    margin-right: 24px;
+    min-width: 50%;
+}
+
+.page-tutors header.page-header {
+    padding: 40px 32px 250px;
+    background-color: transparent;
+    margin: 0 auto -200px;
+    max-width: 1408px;
+    position: relative;
+    top: 24px;
+}
+
+.page-subtitle a {
+    color: #006987;
+}
+
+.tab-icon img {
+    height: 40px;
+    width: 40px;
+}
+
+.tab-icon {
+    margin-right: 10px;
+}
+
+.header-tabs a.tab {
+    border-radius: 16px;
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .2s;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+    background: white;
+    margin-right: 12px;
+    align-items: center;
+}
+
+.header-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+    max-width: 1216px;
+}
+
+.tab .tab-title {
+    color: #3c4447;
+    cursor: pointer;
+}
+
+.header-tabs a.tab:last-child {
+    background: #49505b;
+    transition: background-color .2s;
+}
+
+.header-tabs a.tab:last-child .tab-title {
+    color: white;
+}
+
+.page-tutors header.page-header:before {
+    background: transparent url('/images/tutors-header-1.svg') 0 0 no-repeat;
+    background-size: contain;
+    content: "";
+    height: 60px;
+    left: 8px;
+    position: absolute;
+    top: 4px;
+    transform: rotate(25deg);
+    width: 50px;
+    z-index: -1;
 }
